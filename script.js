@@ -40,6 +40,7 @@ document.querySelector('.check').addEventListener('click', function(){
 });
 
 document.querySelector('.again').addEventListener('click', function(){
+    secretNumber  = Math.trunc(Math.random() * 20) + 1;
     score = 20;
     document.querySelector('.score').textContent = score;
     document.querySelector('.guess').value = '';
